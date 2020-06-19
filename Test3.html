@@ -2,7 +2,7 @@
     function f() {
         w = open(`about:blank`, 'win')
         setTimeout(() => {
-            w.document.write('Hello!')
+            w.document.write('<script>alert(1)</script>')
         }, 2000)
     }
 </script>
