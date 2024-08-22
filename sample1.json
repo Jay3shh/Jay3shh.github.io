@@ -1,0 +1,17 @@
+{
+  "userId": "12345",
+  "username": "johndoe",
+  "email": "johndoe@example.com",
+  "profile": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 30,
+    "location": "New York, NY",
+    "preferences": {
+      "newsletter": true,
+      "notifications": {
+        "email": true,
+        "sms": false
+      }
+    }
+  }
